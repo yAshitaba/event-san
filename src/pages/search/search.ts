@@ -51,4 +51,9 @@ export class SearchPage {
       loader.dismiss();
     })
   }
+  openEvent(event) {
+    this.navCtrl.push('EventDetailPage', {
+      event: event
+    });
+  }
 }
